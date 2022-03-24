@@ -1,7 +1,16 @@
-# Function to add two integer numbers
-* Write a function named **sum** which can add two integer numbers
-* The function must return 
-  * sum of two integers if values are within integer range
-  * Overflow and Underflow errors if value is above or below Integer range
-  * The function must not use any printf and scanf functions
-  * Supporting functions can be used to read and print data to and from console.
+#include<stdio.h>
+int sum(int a,int b)
+{
+return a+b;
+}
+int main()
+{
+int num1,num2,num3;
+printf("Enter First Number: ");
+scanf("%d",&num1);
+printf("Enter Second Number: ");
+scanf("%d",&num2);
+num3 = sum(num1,num2);
+printf("Sum of the Entered Numbers: %d",num3);
+return 0;
+}
